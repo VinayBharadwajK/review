@@ -32,10 +32,10 @@ echo ${arr[@]}
 echo ""
 
 echo "Assending order"
-sorted=($(printf '%d\n' "${arr[@]}"|sort))
+sorted=($(printf '%s\n' "${arr[@]}"|sort -n))
 echo ${sorted[@]}
 echo ""
 
 echo "Decending order"
-rsorted=($(printf '%d\n' "${arr[@]}"|sort -r))
+rsorted=($(printf '%s\n' "${arr[@]}"|sort -nr))
 echo ${rsorted[@]}
